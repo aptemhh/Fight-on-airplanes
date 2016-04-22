@@ -1,0 +1,159 @@
+  @charset "utf-8";
+  
+  /* Обнуление стилей */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, font, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-weight: inherit;
+      font-style: inherit;
+      font-size: 100%;
+      font-family: inherit;
+      vertical-align: baseline;
+      background: transparent;
+    }
+
+    :focus { outline: 0; }
+    body { line-height: 1; color: black; background: transparent;}
+    ol, ul { list-style: none; }
+
+    table { border-collapse: collapse; border-spacing: 0; }
+    caption, th, td { text-align: left; font-weight: normal; }
+    blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+    blockquote, q {  quotes: "" ""; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    a,input { outline: none; }
+    p { margin: 10px 0; }
+
+    h1 { font: bold  18px/22px Tahoma; }
+    h2 { font: bold  16px/20px Tahoma; }
+    h3 { font: bold  14px/18px Tahoma; }
+    h4 { font: bold  12px/16px Tahoma; }
+    h5 { font: bold  10px/14px Tahoma; }
+
+  /* //Обнуление стилей */
+  
+  body {
+    background: #fff;
+    overflow-y: scroll;
+    *overflow-y: none;
+  }
+
+  #conteiner {
+    display:  block;
+    margin: 0 auto;
+    min-height: 100%;
+    *height: 100%; /* Хак для IE6 (прижимаем футер к низу) */
+  }
+
+  #conteiner_2 {
+    position: absolute;
+    *position: relative; /* Хак для IE6 (растягивание экрана в ширину) */
+    display:  block;
+    bottom: 0px;
+    top:    0px;
+    min-height: 100%;
+    *height:    100%;  /* Хак для IE6 (прижимаем футер к низу)*/
+    overflow:   visibility;
+  }
+
+  #conteiner_3 {
+    position: relative;
+    display:  block;
+    overflow: visibility;
+    min-height: 100%;
+  }
+
+  #start { /* Кнопка изменения отображения ширины сайта */
+    background-color: red;
+
+    position: absolute;
+    top:   0px;
+    right: 0px;
+
+    width:  50px;
+    height: 50px;
+    border: 0px;
+    z-index: 999;
+  }
+
+  #head { /*шапка сайта*/
+    background-color: #507aaa;
+    position: relative;
+    float:    left;
+    height:   50px;
+    width:    100%;
+  }
+
+  .tip_fix { /* отображение cтатичного сайта на 800px */
+    width: 800px;
+  }
+
+  .tip_full { /* отображение резнового сайта */
+    width: 100%;
+  }
+
+  #left { /* левая часть сайта */
+    background-color: #eeeeee;
+    position: relative;
+    float:    left;
+
+    width: 100px;
+    min-height: 400px;
+    *height: 400px;  /* Хак для IE6 (прижимаем футер к низу)*/
+
+    margin: 0px 0px 60px -100%;
+    border: 1px solid #bbbbbb;
+  }
+
+  #right { /* правая часть сайта */
+    background-color: #eeeeee;
+    position: relative;
+    float:    right;
+
+    width:  100px;
+    min-height: 400px;  /* Хак для IE6 (прижимаем футер к низу)*/
+
+    margin:  0px 0px 60px -110px;
+    border:  1px solid #bbbbbb;
+  }
+
+  #center { /*Центральная часть сайта */
+    position: relative;
+    float: left;
+    top: 0px;
+    padding: 0px 110px 50px 110px;
+    *padding: 0px 110px 50px 135px; /* Хак для IE6 (лучше прописать в отдельноам файле style_ie6.css, сделано для понятности и уменьшеня кода) */
+  }
+
+  #end_conteiner_3 { /**/
+    position: relative;
+    float:    left;
+    width:    100%;
+    height:   50px;
+  }
+
+  #footer {
+    background-color: #507aaa;
+    position: relative;
+    float:    left;
+    margin-top: -50px;
+
+    width: 100%;
+    height:      50px;
+  }

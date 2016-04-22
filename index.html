@@ -1,154 +1,100 @@
-<!DOCTYPE html>
-<html>
-  <head>
 
-    <meta charset="utf-8">
-    <title>Fight-on-airplanes:old school</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="keywords" content="Игры,Bluetooth, Android,на двоих">
-	<meta name="author" content="Супрун А.Ю.">
-	<meta name="Content-language" content="ru">
-	<meta name="description" content="Описание содержимого на данной странице">
-    <style>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Demo: Adaptive Design With Media Queries</title>
 
+<!-- main css -->
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="media-queries.css" rel="stylesheet" type="text/css">
 
-	  
-	@media screen and (max-width: 600px) {
-	.nave {
-		position: fixed;
-		top:0;
-		left:0;
-		min-height: 40px;
-	}	
-	.nave ul {
-		width: 180px;
-		padding: 5px 0;
-		top: 0;
-		left: 0;
-		border: solid 1px #aaa;
-		background: #FAFAFA url(images/icon-menu.png) no-repeat 10px 11px;
-		border-radius: 5px;
-		box-shadow: 0 1px 2px rgba(0,0,0,.3);
-	}
-	.nave li {
-		display: none; 
-		margin: 0;
-	}
-	.nave .current {
-		display: block; 
-	}
-	.nave a {
-		display: block;
-		padding: 5px 5px 5px 32px;
-		text-align: left;
-	}
-	.nave .current a {
-		background: none;
-		color: #666;
-	}
- 
-	/* при наведении на пункты меню */
-	.nave ul:hover {
-		/*background-image: none;*/
-	}
-	.nave ul:hover li {
-		display: block;
-		margin: 0 0 5px;
-		
-	}
-	.nave ul:hover .current {
-		background: url(images/icon-check.png) no-repeat 7px 7px;
-	}
- 
-	/* адаптивное меню справа */
-	.nave.right ul {
-		left: auto;
-		right: 0;
-	}
- 
-	/* адаптивное меню по центру */
-	.nave.center ul {
-		left: 50%;
-		margin-left: -90px;
-	}
- 
-}
-@media screen and (min-width: 600px)
-{
-	.nave
-	{
-	position:fixed;
-	}
-	.nave ul li 
-	{
-		float:left;
-		display:block;
-		background:#4AAFAA
-		margin-right: 10px;
-		
-	}
-	.nave ul li a
-	{
-	text-decoration: none;
-	color:blue;
-	}
+<!-- html5.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="pagewrap">
+
+	<header id="header">
+
+		<hgroup>
+			<h1 id="site-logo"><a href="#">Demo</a></h1>
+			<h2 id="site-description">Site Description</h2>
+		</hgroup>
+
+		<nav>
+			<ul id="main-nav" class="clearfix">
+				<li><a href="http://webdesignerwall.com">Home</a></li>
+				<li><a href="http://themify.me">Themify</a></li>
+				<li><a href="http://icondock.com">IconDock</a> </li>
+				<li><a href="http://ndesign-studio.com">N.Design</a></li>
+			</ul>
+			<!-- /#main-nav --> 
+		</nav>
+
+		<form id="searchform">
+			<input type="search" id="s" placeholder="Search">
+		</form>
+
+	</header>
+	<!-- /#header -->
 	
-}
-.backer p a
-	{
-	position:fixed;
-	color:red;
-	right:5% ;
-	bottom:5%;
-	text-decoration: none;
-	display:block;
-	background: purple;
-	}
-    </style>
-  </head>
- 
-  <body>
-  
+	<div id="content">
 
+		<article class="post clearfix">
+
+			<header>
+				<h1 class="post-title"><a href="#">Just a Post Title</a></h1>
+				<p class="post-meta"><time class="post-date" datetime="2011-05-08" pubdate>May 8, 2011</time> <em>in</em> <a href="#">Category</a></p>
+			</header>
+			<figure class="post-image"> 
+				<img src="images/sample-image.jpg" /> 
+			</figure>
+			<p>Fusce ut sem est. In eu sagittis felis. In gravida arcu ut neque ornare vitae rutrum turpis vehicula. Nunc ultrices sem mollis metus rutrum non malesuada metus fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque interdum rutrum quam, a pharetra est pulvinar ac. Vestibulum congue nisl magna. Ut vulputate odio id dui convallis in adipiscing libero condimentum. Nunc et pharetra enim. Praesent pharetra, neque et luctus tempor, leo sapien faucibus leo, a dignissim turpis ipsum sed libero. Sed sed luctus purus. Aliquam faucibus turpis at libero consectetur euismod. Nam nunc lectus, congue non egestas quis, condimentum ut arcu. Nulla placerat, tortor non egestas rutrum, mi turpis adipiscing dui, et mollis turpis tortor vel orci. Cras a fringilla nunc. Suspendisse volutpat, eros congue scelerisque iaculis, magna odio sodales dui, vitae vulputate elit metus ac arcu. Mauris consequat rhoncus dolor id sagittis. Cras tortor elit, aliquet quis tincidunt eget, dignissim non tortor.</p>
+
+		</article>
+		<!-- /.post -->
+
+	</div>
+	<!-- /#content --> 
 	
-	<nav class="nave">
-	<ul>
-	    <li class="current"><a href="#">Главная</a></li>
-	    <li><a href="#">О Нас</a></li>
-	    <li><a href="#">Портфолио</a></li>
-	    <li><a href="#top">Наши Услуги</a></li>
-	    <li><a href="#">Контакты</a></li>
-		
-	</ul>
-	</nav>
-	<nav class="backer">
-	<p><a href="#top"> Наверх </a></p>
-	</nav>
-<p><a name="top">_______________</a></p> 
-<p>dfdf</p>
-<p>dfdf</p>
-<p>dfdf</p>
-<p>dfgdfgdfgdfgdf</p><p>dfdgdfgdfgdfgfdf</p><p>dfdf</p>
-<p>dfdfgdfgdfgdf</p>
-<p>dfdfdfgdfgdf</p>
-<p>dfdf</p><p>dfdf</p><p>dfdf</p>
-<p>dffddfdfgdfgdf</p>
-<p>dfdf</p>
-<p>dfddfgf</p><p>dfdf</p><p>dfdf</p>
-<p>dfdf</p><p>dfdf</p>
-<p>dfgdfgdfgdfgdf</p><p>dfdgdfgdfgdfgfdf</p><p>dfdf</p>
-<p>dfdfgdfgdfgdf</p>
-<p>dfdfdfgdfgdf</p>
-<p>dfdf</p><p>dfdf</p><p>dfdf</p>
-<p>dffddfdfgdfgdf</p>
-<p>dfdf</p>
-<p>dfddfgf</p><p>dfdf</p><p>dfdf</p>
-<p>dfdf</p>
+	
+	<aside id="sidebar">
 
-<p>dfdf</p><p>dfdf</p><p>dfdf</p>
-<p>dfdf</p>
-<p>dfdf</p>
-<p>dfdf</p><p>dfdf</p>
+		<section class="widget">
+			<h4 class="widgettitle">Sidebar</h4>
+			<ul>
+				<li><a href="#">WordPress</a> (3)</li>
+				<li><a href="#">Design</a> (23)</li>
+				<li><a href="#">Design </a>(18)</li>
+			</ul>
+		</section>
+		<!-- /.widget -->
 
-  </body>
+		<section class="widget clearfix">
+			<h4 class="widgettitle">Flickr</h4>
+			<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8.&display=latest&size=s&layout=x&source=user&user=52839779@N02"></script> 
+		</section>
+		<!-- /.widget -->
+						
+	</aside>
+	<!-- /#sidebar -->
+
+	<footer id="footer">
+	
+		<p>Tutorial by <a href="http://webdesignerwall.com">Web Designer Wall</a></p>
+
+	</footer>
+	<!-- /#footer --> 
+	
+</div>
+<!-- /#pagewrap -->
+
+</body>
 </html>
