@@ -193,6 +193,7 @@ MAIN NAVIGATION
 	list-style: none;
 	float: left;
 	position: relative;
+	
 }
 #main-nav li:first-child {
 	margin-left: 10px;
@@ -317,71 +318,7 @@ FOOTER
 #footer a {
 	color: #fff;
 }
-/************************************************************************************
-Размер экрана меньше 980px 
-*************************************************************************************/
-@media screen and (max-width: 980px) {
-   #pagewrap {
-      width: 95%;
-   }
-   #content {
-      width: 60%;
-      padding: 3% 4%;
-   }
-   #sidebar {
-      width: 30%;
-   }
-   #sidebar .widget {
-      padding: 8% 7%;
-      margin-bottom: 10px;
-   }
-}
-/************************************************************************************
-Размер экрана меньше 650px (одноколоночный макет)
-*************************************************************************************/
-@media screen and (max-width: 650px) {
-   #header {
-      height: auto;
-   }
-   #searchform {
-      position: absolute;
-      top: 5px;
-      right: 0;
-   }
-   #main-nav {
-      position: static;
-   }
-   #site-logo {
-      margin: 15px 100px 5px 0;
-      position: static;
-   }
-   #site-description {
-      margin: 0 0 15px;
-      position: static;
-   }
-   #content {
-      width: auto;
-      float: none;
-      margin: 20px 0;
-   }
-   #sidebar {
-      width: 100%;
-      float: none;
-      margin: 0;
-   }
-}
-/************************************************************************************
-Размер экрана меньше 480px
-*************************************************************************************/
-@media screen and (max-width: 480px) {
-   html {
-      -webkit-text-size-adjust: none;
-   }
-   #main-nav a {
-      font-size: 90%;
-      padding: 10px 8px;
-   }
-}
+
 
 /************************************************************************************
 CLEARFIX

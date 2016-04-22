@@ -1,0 +1,124 @@
+/************************************************************************************
+Размер экрана меньше 980px 
+*************************************************************************************/
+@media screen and (max-width: 980px) {
+   #pagewrap {
+      width: 95%;
+   }
+   #content {
+      width: 60%;
+      padding: 3% 4%;
+   }
+   #sidebar {
+      width: 30%;
+   }
+   #sidebar .widget {
+      padding: 8% 7%;
+      margin-bottom: 10px;
+   }
+}
+/************************************************************************************
+Размер экрана меньше 650px (одноколоночный макет)
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+   #header {
+      height: auto;
+   }
+   #searchform {
+      position: absolute;
+      top: 5px;
+      right: 0;
+   }
+   #main-nav {
+      position: static;
+   }
+   #site-logo {
+      margin: 15px 100px 5px 0;
+      position: static;
+   }
+   #site-description {
+      margin: 0 0 15px;
+      position: static;
+   }
+   #content {
+      width: auto;
+      float: none;
+      margin: 20px 0;
+   }
+   #sidebar {
+      width: 100%;
+      float: none;
+      margin: 0;
+   }
+   
+   /*                                      */
+   #main-nav {
+		position:absolute;
+ 		top:0;
+ 		left:0;
+ 		min-height: 40px;
+		background:#FFF
+ 	}	
+ 	#main-nav ul {
+ 		width: 180px;
+ 		padding: 10px 0;
+ 		top: 0;
+ 		left: 0;
+ 		border: solid 1px #aaa;
+ 		
+ 		border-radius: 5px;
+ 		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+ 	}
+ 	#main-nav li {
+ 		display: none; 
+ 		margin: 0;
+		color:#00F
+ 	}
+ 	#main-nav .current {
+ 		display: block; 
+ 	}
+ 	#main-nav a {
+ 		display: block;
+ 		padding: 5px 5px 5px 32px;
+ 		text-align: left;
+ 	}
+ 	#main-nav .current a {
+ 		background: none;
+ 		
+ 	}
+  
+ 	/* при наведении на пункты меню */
+ 	#main-nav :hover {
+ 		background: #F22;
+ 	}
+	#main-nav ul:hover {
+		display:block;
+		padding :10px 0;
+ 	}
+ 	#main-nav ul:hover li {
+		background: #efefef;
+ 		display: inline-block;
+		padding :5px 0;
+		
+ 	}
+ 	#main-nav ul:hover li a {
+		color:#00F;
+		display: inline-block;
+ 	}
+  
+
+  
+
+}
+/************************************************************************************
+Размер экрана меньше 480px
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+   html {
+      -webkit-text-size-adjust: none;
+   }
+   #main-nav a {
+      font-size: 90%;
+      padding: 10px 8px;
+   }
+}
