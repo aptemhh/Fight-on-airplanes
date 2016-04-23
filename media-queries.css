@@ -29,9 +29,6 @@
       top: 5px;
       right: 0;
    }
-   #main-nav {
-      position: static;
-   }
    #site-logo {
       margin: 15px 100px 5px 0;
       position: static;
@@ -53,60 +50,92 @@
    
    /*                                      */
    #main-nav {
-		position:absolute;
- 		top:0;
- 		left:0;
- 		min-height: 40px;
-		background:#FFF
- 	}	
- 	#main-nav ul {
- 		width: 180px;
- 		padding: 10px 0;
- 		top: 0;
- 		left: 0;
- 		border: solid 1px #aaa;
- 		
- 		border-radius: 5px;
- 		box-shadow: 0 1px 2px rgba(0,0,0,.3);
- 	}
- 	#main-nav li {
- 		display: none; 
- 		margin: 0;
-		color:#00F
- 	}
- 	#main-nav .current {
- 		display: block; 
- 	}
- 	#main-nav a {
- 		display: block;
- 		padding: 5px 5px 5px 32px;
- 		text-align: left;
- 	}
- 	#main-nav .current a {
- 		background: none;
- 		
- 	}
-  
- 	/* при наведении на пункты меню */
- 	#main-nav :hover {
- 		background: #F22;
- 	}
-	#main-nav ul:hover {
-		display:block;
-		padding :10px 0;
- 	}
- 	#main-nav ul:hover li {
-		background: #efefef;
- 		display: inline-block;
-		padding :5px 0;
-		
- 	}
- 	#main-nav ul:hover li a {
-		color:#00F;
-		display: inline-block;
- 	}
-  
+	background: #ccc;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	left:auto;
+	right:5%;
+	top: 40px;
+	height:40px;
+	width:100px;
+	z-index: 100;
+	/* gradient */
+	background: none;
 
+	/* rounded corner */
+	-webkit-border-radius: none;
+	-moz-border-radius: none;
+	border-radius:none;
+	/* box shadow */
+	-webkit-box-shadow: none;
+	-moz-box-shadow: inone;
+	box-shadow: none;
+}
+#main-nav li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;	
+}
+#main-nav li:first-child {
+	margin-left: 0px;
+}
+#main-nav .current a {
+	display:block;
+	background:#0FF;
+	
+	background: #6a6a6a url(images/nav-bar-bg.png) repeat-x;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b9b9b9), to(#6a6a6a));
+	background: -moz-linear-gradient(top,  #b9b9b9,  #6a6a6a);
+	background: linear-gradient(-90deg, #b9b9b9, #6a6a6a);
+	/* rounded corner */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* box shadow */
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+ 	}
+#main-nav a {
+	line-height: 100%;
+	font-weight: bold;
+	color: #fff;
+	display: none;
+	padding: 14px 15px;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+#main-nav :hover .current a {
+		display:block;
+		background: #474747;
+	/* gradient */
+	background: -webkit-gradient(linear, left top, left bottom, from(#282828), to(#4f4f4f));
+	background: -moz-linear-gradient(top,  #282828,  #4f4f4f);
+	background: linear-gradient(-90deg, #282828, #4f4f4f);
+ 	}
+#main-nav :hover a
+{
+	display:block;
+	background: #474747;
+	width:50px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* box shadow */
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+}
+#main-nav  a:hover
+{
+	background: #474747;
+	/* gradient */
+	background: -webkit-gradient(linear, left top, left bottom, from(#282828), to(#4f4f4f));
+	background: -moz-linear-gradient(top,  #282828,  #4f4f4f);
+	background: linear-gradient(-90deg, #282828, #4f4f4f);
+}
   
 
 }
@@ -119,6 +148,5 @@
    }
    #main-nav a {
       font-size: 90%;
-      padding: 10px 8px;
    }
 }
