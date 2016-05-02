@@ -24,12 +24,6 @@ img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
     display: block;
 }
-.video embed,
-.video object,
-.video iframe {
-   width: 100%;
-   height: auto;
-}
 
 /************************************************************************************
 GENERAL STYLING
@@ -258,54 +252,6 @@ CONTENT
 	margin: 0 0 15px;
 }
 
-/************************************************************************************
-SIDEBAR
-*************************************************************************************/
-#sidebar {
-	width: 280px;
-	float: right;
-	margin: 30px 0 30px;
-}
-.widget {
-	background: #fff;
-	margin: 0 0 30px;
-	padding: 10px 20px;
-	/* rounded corner */
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	/* box shadow */
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
-	box-shadow: 0 1px 3px rgba(0,0,0,.4);
-}
-.widgettitle {
-	margin: 0 0 5px;
-	padding: 0;	
-}
-.widget ul {
-	margin: 0;
-	padding: 0;
-}
-.widget li {
-	margin: 0;
-	padding: 6px 0;
-	list-style: none;
-	clear: both;
-	border-top: solid 1px #eee;
-}
-
-/* flickr widget */
-.widget .flickr_badge_image {
-	margin-top: 10px;
-}
-.widget .flickr_badge_image img {
-	width: 48px;
-	height: 48px;
-	margin-right: 12px;
-	margin-bottom: 12px;
-	float: left;
-}
 
 /************************************************************************************
 FOOTER
