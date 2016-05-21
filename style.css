@@ -33,8 +33,8 @@ body {
 	font: .81em/150% Arial, Helvetica, sans-serif;
 	color: #666;
 }
-a {
 	color: #026acb;
+a {
 	text-decoration: none;
 	outline: none;
 }
@@ -127,38 +127,11 @@ HEADER
 	top: 55px;
 }
 
-/* searchform */
-#searchform {
-	position: absolute;
-	right: 10px;
-	bottom: 6px;
-	z-index: 100;
-	width: 160px;
-}
-#searchform #s {
-	width: 140px;
-	float: right;
-	background: #fff;
-	border: none;
-	padding: 6px 10px;
-	/* border radius */
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	/* box shadow */
-	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
-	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
-	box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
-	/* transition */
-	-webkit-transition: width .7s;
-	-moz-transition: width .7s;
-	transition: width .7s;
-}
-
 /************************************************************************************
 MAIN NAVIGATION
 *************************************************************************************/
 #main-nav {
+	font-size:12px;
 	width: 100%;
 	background: #ccc;
 	margin: 0;
