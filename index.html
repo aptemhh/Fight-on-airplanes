@@ -22,6 +22,8 @@
 <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+
 </head>
 
 <body>
@@ -53,9 +55,11 @@
 			<header>
 				<h1 class="post-title"><a href="#">«Fight on airplanes: old school»</a></h1>
 			</header>
+			<!--
 			<figure class="post-image"> 
 				<img src="images/sample-image.jpg" /> 
 			</figure>
+			-->
 			<h3 id="sys.treb">Системные требования:</h3>
 			<ul>
 			<li>Тип дисплея: TFT;</li>
@@ -69,11 +73,19 @@
 		<div>
 			<iframe src="https://www.youtube.com/embed/ust882Y9m98?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
 		</div>
+		
+<div id="vk_like"></div>
+<script type="text/javascript">
+window.onload = function () {
+ VK.init({apiId: 111, onlyWidgets: true});
+ VK.Widgets.Like('vk_like', {width: 500, pageTitle: 'Статья номер 321', pageDescription: 'Описание статьи номер 321'}, 321);
+}
+</script>
+
+
 	</div>
 	
 	
-<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
-<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir"></div> 
 
 	<footer id="footer">
 	
