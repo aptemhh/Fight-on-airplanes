@@ -60,7 +60,7 @@ li {
 /* headings */
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.4em;
-	margin: 20px 0 .4em;
+	margin: 10px 0 .4em;
 	color: #000;
 }
 h1 {
@@ -204,7 +204,7 @@ CONTENT
 
 /* post */
 .post {
-	margin-bottom: 40px;
+	margin-bottom: 5px;
 }
 .post-title {
 	margin: 0 0 5px;
@@ -222,7 +222,8 @@ CONTENT
 
 /* post image */
 .post-image {
-	margin: 0 0 15px;
+display:inline-block;
+
 }
 
 
@@ -251,3 +252,12 @@ CLEARFIX
 .clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 .clearfix { display: block; }
 .clearfix { display: block; zoom: 1; }
+
+.text
+{
+	text-indent:20px;
+}
+.skr
+{
+	margin:0 0 5px 0;
+}
