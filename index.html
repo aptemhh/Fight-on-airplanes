@@ -22,6 +22,7 @@
 <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
+
 <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
 
 </head>
@@ -76,10 +77,9 @@
 		
 <div id="vk_like"></div>
 <script type="text/javascript">
-window.onload = function () {
- VK.init({apiId: 111, onlyWidgets: true});
- VK.Widgets.Like('vk_like', {width: 500, pageTitle: 'Статья номер 321', pageDescription: 'Описание статьи номер 321'}, 321);
-}
+VK.Widgets.Like("vk_like", {type: "button"});
+</script>
+
 </script>
 
 
