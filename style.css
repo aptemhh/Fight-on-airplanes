@@ -112,13 +112,18 @@ HEADER
 #site-logo {
 	position: absolute;
 	top: 10px;
+
 }
 #site-logo a {
 	font: bold 30px/100% Arial, Helvetica, sans-serif;
 	color: #fff;
 	text-decoration: none;
 }
-
+#site-logo img
+{
+	width:40px;
+	height:40px;
+}
 /* site description */
 #site-description {
 	font: italic 100%/130% "Times New Roman", Times, serif;
@@ -261,4 +266,14 @@ div .skr
 {
 	margin:0 0 5px 0;
 	width:100%;
+}
+.autor h1
+{
+	text-align:right ;
+	font-style: italic;
+}
+.autor img
+{
+	width:15px;
+	height:15px;
 }
